@@ -28,10 +28,7 @@ dimedBlack.addEventListener('click', toggleThanksSubscribe);
 
 
 
-
-
-
-//pictsum api 이미지 기능
+//pictsum api 이용해야함
 const imageList = document.getElementById('image-list');
 const showMore = document.getElementById('show-more');
 
@@ -60,7 +57,7 @@ const fetchImages = async () => {
             continueBox.classList.add('hidden');
         }
     } catch (error) {
-        console.error('데이터를 가져오는데 문제가 발생했습니다. ', error);
+        console.error('오류 발생 데이터가 없음. ', error);
     }
 };
 
@@ -78,15 +75,17 @@ const throttling = (callback, delay) => {
     };
 };
 
-// 2초의 딜레이 시간 주기
-const throttleFetchImages = throttling(fetchImages, 2000);
 
-// 더보기 버튼을 누르면 무한 스크롤 하다가 특정 개수를 출력 완료하면 멈추고 이후에는 더보기 버튼 눌러서 추가로 출력
+// 특정 사진 순번 출력
 const infiniteScroll = () => {
     if (window.innerHeight + document.documentElement.scrollTop >= document.documentElement.offsetHeight - 15 && pageToFetch <= 30 ) {
         throttleFetchImages();
     }
 };
+
+// 2초
+const throttleFetchImages = throttling(fetchImages, 2000);
+
 
 // Initial load
 fetchImages();
@@ -101,27 +100,27 @@ window.addEventListener('scroll', infiniteScroll);
 
 
 
-// 지도좌표
+
 const posX = 33.4424896;
 const posY = 126.5714226;
 
-const mapContainer = document.getElementById('map'), // 지도를 표시할 div
+const mapContainer = document.getElementById('map'), 
     mapOption = {
-        center: new kakao.maps.LatLng(posX, posY), // 지도의 중심좌표
-        level: 4 // 지도의 확대 레벨
+        center: new kakao.maps.LatLng(posX, posY), 
+        level: 4 
     };
 
-const map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+const map = new kakao.maps.Map(mapContainer, mapOption); 
 
-// 마커가 표시될 위치입니다
+
 const markerPosition  = new kakao.maps.LatLng(posX, posY);
 
-// 마커를 생성합니다
+
 const marker = new kakao.maps.Marker({
     position: markerPosition
 });
 
-// 마커가 지도 위에 표시되도록 설정합니다
+
 marker.setMap(map);
 
 
