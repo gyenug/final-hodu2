@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hodu</title>
+    
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<!--처음  -->
+<body>
+    <header id="header" class="header">
+        <nav class="header-navbar">
+            <a href="#header">
+                <h1><span class="ir_pm">호두사이트</span></h1>
+            </a>
+            <button class="btn-menu">
+                <img src="img/menu.svg" alt="메뉴 버튼">
+            </button>
+            <article class="menu-mobile">
+                <div class="popup-menu">
+                    <button class="btn-back">
+                        <img src="img/arrow-left.svg" alt="뒤로가기 버튼">
+                    </button>
+                    <ul class="popup-menu-list">
+                        <li><a href="javascript:void(0)">Home</a></li>
+                        <li><a href="javascript:void(0)">About</a></li>
+                        <li><a href="javascript:void(0)">Support</a></li>
+                    </ul>
+                    <button type="button" class="btn-download-m">Download</button>
+                </div>
+                <div class="dimed"></div>
+            </article>
+        </nav>
+<!--글1  -->
+        <div class="wrap-txt">
+            <strong>Lorem Ipsum is simply dummy text of the printing and</strong>
+            <em>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>
+                Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown</em>
+            <button type="button" class="btn-download">Download</button>
+        </div>
+    </header>
+
+    <main class="cont-main">
+        <h2 class="sr-only">호두는?</h2>
+        <section class="txt-main">
+            <div class="wrap-cont">
+                <img src="img/img_4.jpg" alt="" class="main-hodu">
+<!--글2  -->
+                <div class="wrap-cont-col">
+                    <strong>Lorem Ipsum is simply
+                        dummy text of the printing and dummy text</strong>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+            </div>
+            <em>dummy text of the printing and dummy</em>
+            <p>Lorem Ipsum is simply <span>dummy text</span> of the printing and typesetting industry.<br>
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown</p>
+        </section>
+
+
+
+        <!-- 이미지3장  -->
+        <article class="slide-photo">
+            <img src="img/img_1.jpg" alt="">
+            <img src="img/img_2.jpg" alt="">
+            <img src="img/img_3.jpg" alt="">
+        </article>
+        <section class="txt-main second">
+            <div class="wrap-cont-row">
+<!--글4  -->
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                    unknown<br>
+                    Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                <button  type="button" class="btn-learn">Learn More</button>
+            </div>
+        </section>
+
+
+
+        
+<!--  이미지 무한   -->
+<section class="unlimited">
+    <div class="contents-style">
+        <div class="muhan1">
+        <div id="image-list"></div>
+                <div id ="continueBox">
+                    <strong>show more HODU?</strong>
+                    <button id="show-more">Show More</button>
+                </div>
+            </div>
+            </div>
+        </section>
+
+
+
+
+
+<!-- 지도 -->
+<section class="map1 w1280">
+    <h2>Where you’ll be</h2>
+    <p>330, Cheomdan-ro, Jeju-si, Jeju-do, Republic of Korea</p>
+    <div class="map" id="map"></div>
+</section>
+
+
+
+
+
+
+<!--  구독  -->
+    </main>
+    <section class="sect-subs">
+        <h2 class="sr-only">호두 구독해주세요</h2>
+        <article class="subs">
+            <div class="txt-subs">
+                <h3>Subscribe to our Blog post</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>
+                    Lorem Ipsum has been the industry's standard dummy text </p>
+            </div>
+            <form action="/" method="post">
+                <label for="subscribeForm" class="sr-only">블로그 포스트 구독</label>
+                <input type="text" name="subscribeForm" id="subscribeForm" placeholder="Enter your e-mail address">
+                <button type="button" class="btn-subscribe">Subscribe</button>
+            </form>
+        </article>
+        <article class="modal-thanks">
+            <div class="popup-thanks">
+                <img src="img/cat-subscribe.png" alt="호두는 기뻐요">
+                <strong>Thank you!</strong>
+                <p>Lorem Ipsum is simply dummy text of the printing industry.</p>
+                <button type="button" class="btn-okhodu">OK! I Love HODU</button>
+            </div>
+            <div class="dimed-black"></div>
+        </article>
+    </section>
+
+
+    <!--  푸터 부분 외부 사이트 링크사진 -->
+    <footer>
+        <section class="footer-col">
+            <a href="#header">
+                <h2><span class="ir_pm">프로젝트 완성</span></h2>
+            </a>
+            <ul class="btn-sns">
+                <li><button><a href="https://www.tistory.com/" ><img src="img/blog.svg" alt="블로그"></button></li>
+                <li><button><a href="https://www.instagram.com/" ><img src="img/instagram.svg" alt="인스타그램"></button></li>
+                <li><button><a href="https://www.facebook.com/" ><img src="img/facebook.svg" alt="페이스북"></button></li>
+                <li><button><a href="https://www.youtube.com/" ><img src="img/youtube.svg" alt="유튜브"></button></li>
+            </ul>
+        </section>
+        <ul class="footer-navbar">
+            <li>About</li>
+            <li>Blog</li>
+            <li>Support</li>
+            <li>Terms of Use</li>
+        </ul>
+    </footer>
+    <script src="app.js"></script>
+</body>
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=523a17d22364aabcbc8dadfcd0da3661"></script>
+<script src = "/app.js"></script>
+</html>
