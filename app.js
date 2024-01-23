@@ -35,7 +35,7 @@ const showMore = document.getElementById('show-more');
 let pageToFetch = 0;
 
 const fetchImages = async () => {
-    const apiUrl = `https://picsum.photos/v2/list?page=1&limit=100`;
+    const apiUrl = `https://picsum.photos/v2/list?page=1&limit=44`;
 
     try {
         const response = await fetch(apiUrl);
