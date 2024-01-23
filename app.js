@@ -101,8 +101,8 @@ window.addEventListener('scroll', infiniteScroll);
 
 
 
-const posX = 33.4424896;
-const posY = 126.5714226;
+const posX = 37.566826;
+const posY = 126.9786567;
 
 const mapContainer = document.getElementById('map'), 
     mapOption = {
