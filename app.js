@@ -27,7 +27,7 @@ dimedBlack.addEventListener('click', toggleThanksSubscribe);
 
 
 
-
+//두번째
 //pictsum api 이용해야함
 const imageList = document.getElementById('image-list');
 const showMore = document.getElementById('show-more');
